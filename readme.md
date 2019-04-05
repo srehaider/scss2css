@@ -28,8 +28,8 @@ in terminal to convert SCSS to CSS. It produces optimized and unminified css wit
 To add your own SCSS you only need to add it to `entryPoints` array in `webpack.config.js`.
 
 ```
-const source = "./scss";  // Complete or relative path to current directory
-const destination = "./css";  // Complete or relative path to current directory
+const source = "./scss";  // Absolute or relative path to current directory
+const destination = "./css";  // Absolute or relative path to current directory
 const entryPoints = [
     "main",
     "another",

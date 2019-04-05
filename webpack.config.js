@@ -4,8 +4,8 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const path = require("path");
 
 
-const source = "./scss";  // Complete or relative path to current directory
-const destination = "./css";  // Complete or relative path to current directory
+const source = "./scss";  // Absolute or relative path to current directory
+const destination = "./css";  // Absolute or relative path to current directory
 const entryPoints = [
     "main",
     "another",
@@ -53,7 +53,6 @@ module.exports = (env, argv) => {
                                         "browsers": ["> 1%", "last 2 versions"]
                                     }),
                                     require("css-mqpacker")(),
-                                    require("postcss-merge-selectors")(),
                                 ],
                             }
                         },
