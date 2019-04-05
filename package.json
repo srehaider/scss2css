@@ -1,15 +1,14 @@
 {
-  "name": "wp_test",
+  "name": "scss2css",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Use webpack to convert SCSS to CSS for production and development",
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack -wd --devtool='source-map'"
+    "build": "webpack -p --progress",
+    "start": "webpack -wd  --progress --devtool='source-map'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["SCSS", "CSS", "webpack", "SASS"],
+  "author": "Rehan Haider",
+  "license": "MIT",
   "dependencies": {
     "autoprefixer": "^9.5.0",
     "css-loader": "^2.1.1",

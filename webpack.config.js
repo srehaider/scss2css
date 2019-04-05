@@ -24,6 +24,18 @@ module.exports = (env, argv) => {
             path: path.resolve(__dirname, destination),
             filename: "[name].min.js"
         },
+        stats: {
+            all: false,
+            assets: true,
+            cachedAssets: true,
+            errors: true,
+            errorDetails: true,
+            hash: true,
+            performance: true,
+            publicPath: true,
+            timings: true,
+            warnings: true,
+        },
         module: {
             rules: [
                 {
