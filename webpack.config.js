@@ -61,10 +61,7 @@ module.exports = (env, argv) => {
                                 url: false,
                                 sourceMap: true,
                                 plugins: () => [
-                                    require("autoprefixer")({
-                                        "browsers": ["> 1%", "last 2 versions"]
-                                    }),
-                                    require("css-mqpacker")(),
+                                    require("autoprefixer")(),
                                 ],
                             }
                         },
