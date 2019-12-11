@@ -44,7 +44,6 @@ module.exports = (env, argv) => {
                         {
                             loader: MiniCssExtractPlugin.loader,
                             options: {
-                                url: false,
                                 sourceMap: true,
                             }
                         },
@@ -58,7 +57,6 @@ module.exports = (env, argv) => {
                         {
                             loader: "postcss-loader",
                             options: {
-                                url: false,
                                 sourceMap: true,
                                 plugins: () => [
                                     require("autoprefixer")(),
@@ -68,7 +66,6 @@ module.exports = (env, argv) => {
                         {
                             loader: "sass-loader",
                             options: {
-                                url: false,
                                 sourceMap: true,
                             }
                         }
